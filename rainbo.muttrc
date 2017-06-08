@@ -1,0 +1,64 @@
+# The chosen color selection
+# 41 - green
+# 44 - blue
+# 160 - red
+# 208 - orange
+# 11 - yellow
+# 233 - black
+#
+# c0bc6c / 208
+
+# general-doesn't-fit stuff
+color normal color07 color233
+color error color11 color160
+color markers color208 color233
+color tilde color208 color233
+color status color208 color233
+
+# index stuff
+color tree color244 color233
+color indicator color254 color238
+color index color254 color233 ~A
+color index color254 color233 ~N
+color index color254 color233 ~O
+color index color254 color233 ~F
+
+# header stuff
+color hdrdefault color244 color233
+color header color11 color233 "^Subject"
+
+# gpg stuff
+color body color41 color233 "^gpg: Good signature.*"
+color body color11 color160 "^gpg: BAD signature.*"
+color body color208 color233 "^gpg: Can't check signature.*"
+color body color208 color233 "^-----BEGIN PGP SIGNED MESSAGE-----"
+color body color208 color233 "^-----BEGIN PGP SIGNATURE-----"
+color body color208 color233 "^-----END PGP SIGNED MESSAGE-----"
+color body color208 color233 "^-----END PGP SIGNATURE-----"
+color body color208 color233 "^Version: GnuPG.*"
+color body color208 color233 "^Comment: .*"
+#color body color208 color233 "^[[:alnum:]/\+=]+[[:space:]]+$"
+
+
+# url, email and web stuff
+color body color44 color233 "(finger|ftp|http|https|news|telnet)://[^ >]*"
+color body color44 color233 "<URL:[^ ]*>"
+color body color44 color233 "www\\.[-.a-z0-9]+\\.[a-z][a-z][a-z]?([-_./~a-z0-9]+)?"
+color body color44 color233 "mailto: *[^ ]+\(\\i?subject=[^ ]+\)?"
+color body color44 color233 "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+# misc body stuff
+color attachment color44 color233
+color signature color208 color233
+
+# quote levels
+color quoted color244 color233
+color quoted1 color208 color233
+color quoted2 color41 color233
+color quoted3 color208 color233
+color quoted4 color41 color233
+color quoted5 color208 color233
+color quoted6 color41 color233
+color quoted7 color208 color233
+color quoted8 color41 color233
+color quoted9 color208 color233
