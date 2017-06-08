@@ -22,8 +22,7 @@
 "
 
 set background=dark
-
-hi clear
+highlight clear
 
 if exists("syntax_on")
 	syntax reset
@@ -37,7 +36,7 @@ hi Normal		ctermfg=254		ctermbg=233		cterm=none		guifg=#f6f3e8	guibg=#232323	gui
 hi Cursor		ctermfg=none	ctermbg=241		cterm=none		guifg=NONE		guibg=#656565	gui=none
 hi Visual		ctermfg=7		ctermbg=238		cterm=none		guifg=#f6f3e8	guibg=#444444	gui=none
 " hi VisualNOS
-hi Search		ctermfg=233		ctermbg=11 		cterm=none		guifg=#000000	guibg=#444444	gui=none
+hi Search		ctermfg=233		ctermbg=11		cterm=none		guifg=#000000	guibg=#444444	gui=none
 hi Folded		ctermfg=7		ctermbg=238		cterm=none		guifg=#a0a8b0	guibg=#384048	gui=none
 hi Title		ctermfg=7		ctermbg=none	cterm=bold		guifg=#f6f3e8	guibg=NONE		gui=bold
 hi StatusLine	ctermfg=7		ctermbg=238		cterm=none		guifg=#f6f3e8	guibg=#444444	gui=italic
@@ -49,10 +48,11 @@ hi NonText		ctermfg=244		ctermbg=0		cterm=none		guifg=#808080	guibg=#000000	gui=
 
 " Vim >= 7.0 specific colors
 if version >= 700
-hi CursorLine					ctermbg=236		cterm=none						guibg=#2d2d2d
+hi CursorLine					ctermbg=233		cterm=none						guibg=#232323
+hi CursorLineNr	ctermfg=208						cterm=bold		guifg=#e5786d					gui=bold
 hi MatchParen	ctermfg=7		ctermbg=243		cterm=bold		guifg=#f6f3e8	guibg=#857b6f	gui=bold
 hi Pmenu		ctermfg=7		ctermbg=238						guifg=#f6f3e8	guibg=#444444
-hi PmenuSel		ctermfg=233		ctermbg=11 						guifg=#000000	guibg=#cae682
+hi PmenuSel		ctermfg=233		ctermbg=11						guifg=#000000	guibg=#cae682
 endif
 
 
